@@ -1,7 +1,9 @@
 <template>
   <layout-container>
     <layout-inner>
-      <base-link name="戻る" path="/" />
+      <el-card class="box-card login">
+        <base-link name="戻る" path="/" />
+      </el-card>
     </layout-inner>
   </layout-container>
 </template>
