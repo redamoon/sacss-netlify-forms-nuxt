@@ -1,12 +1,12 @@
 <template>
-  <from :name="name" method="POST" data-netlify="true" class="from-container">
+  <form :name="name" method="POST" data-netlify="true" class="form-container">
     <slot />
-  </from>
+  </form>
 </template>
 
 <script>
 export default {
-  name: 'FromContainer',
+  name: 'FormContainer',
   props: {
     name: {
       type: String,
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.from-container {
+.form-container {
   width: 100%;
 }
 </style>
