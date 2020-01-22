@@ -1,9 +1,3 @@
-<template>
-  <component :is="elementTags(tagsName)" :class="`list-tags -${tagsName}`">
-    <slot />
-  </component>
-</template>
-
 <script>
 export default {
   name: 'ListTags',
@@ -13,18 +7,18 @@ export default {
       required: true
     }
   },
-  methods: {
-    elementTags(tag) {
-      return tag
-    }
+  render(createElement) {
+    const tag = this.tagsName
+    return createElement(
+      tag,
+      {
+        attrs: {
+          class: 'list-tags -' + tag
+        }
+      },
+      this.$slots.default
+    )
   }
-  // render(createElement) {
-  //   return createElement(
-  //     this.tagsName,
-  //     { class: 'list-tags -' + this.TagsName },
-  //     this.$slots.default
-  //   )
-  // }
 }
 </script>
 
