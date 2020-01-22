@@ -1,6 +1,11 @@
 <template>
   <layout-container>
     <layout-inner>
+      <list-tags tags-name="ul">
+        <li>ほげほげ</li>
+        <li>ほげほげ</li>
+        <li>ほげほげ</li>
+      </list-tags>
       <base-link name="戻る" path="/" />
       <form-container name="sacss">
         <label for="form-name">名前</label>
@@ -20,13 +25,15 @@ import LayoutContainer from '~/components/LayoutContainer'
 import LayoutInner from '~/components/LayoutInner'
 import BaseLink from '~/components/BaseLink'
 import FormContainer from '~/components/FormContainer'
+import ListTags from '~/components/ListTags'
 
 export default {
   components: {
     LayoutContainer,
     LayoutInner,
     BaseLink,
-    FormContainer
+    FormContainer,
+    ListTags
   }
 }
 </script>

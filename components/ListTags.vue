@@ -1,3 +1,9 @@
+<template>
+  <component :is="elementTags(tagsName)" :class="`list-tags -${tagsName}`">
+    <slot />
+  </component>
+</template>
+
 <script>
 export default {
   name: 'ListTags',
@@ -7,8 +13,28 @@ export default {
       required: true
     }
   },
-  render(createElement) {
-    return createElement(this.tagsName, this.$slots.default)
+  methods: {
+    elementTags(tag) {
+      return tag
+    }
   }
+  // render(createElement) {
+  //   return createElement(
+  //     this.tagsName,
+  //     { class: 'list-tags -' + this.TagsName },
+  //     this.$slots.default
+  //   )
+  // }
 }
 </script>
+
+<style lang="scss" scoped>
+.list-tags {
+  &.-ol {
+    color: #ff4500;
+  }
+  &.-ul {
+    color: #3b8070;
+  }
+}
+</style>
