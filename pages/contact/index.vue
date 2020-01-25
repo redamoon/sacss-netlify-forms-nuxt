@@ -17,7 +17,7 @@
               id="form-good"
               name="form-satisfaction"
               type="radio"
-              value="参加してよかった"
+              value="満足度100%"
             />
           </li>
           <li>
@@ -26,7 +26,7 @@
               id="form-usually"
               name="form-satisfaction"
               type="radio"
-              value="普通"
+              value="満足度50%"
             />
           </li>
           <li>
@@ -35,7 +35,7 @@
               id="form-not-good"
               name="form-satisfaction"
               type="radio"
-              value="楽しくなかった"
+              value="満足度10%"
             />
           </li>
         </list-tags>
