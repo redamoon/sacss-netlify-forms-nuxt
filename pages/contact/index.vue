@@ -17,7 +17,7 @@
               id="form-good"
               name="form-satisfaction"
               type="radio"
-              value="楽しかった"
+              value="参加してよかった"
             />
           </li>
           <li>
