@@ -9,36 +9,6 @@
         <input id="form-email" name="email" type="email" />
         <label for="form-url">URL</label>
         <input id="form-url" name="url" type="url" />
-        <p>満足度</p>
-        <list-tags tags-name="ul">
-          <li>
-            <label for="form-good">参加してよかった</label>
-            <input
-              id="form-good"
-              name="form-satisfaction"
-              type="radio"
-              value="満足度100%"
-            />
-          </li>
-          <li>
-            <label for="form-usually">普通</label>
-            <input
-              id="form-usually"
-              name="form-satisfaction"
-              type="radio"
-              value="満足度50%"
-            />
-          </li>
-          <li>
-            <label for="form-not-good">良くなかった</label>
-            <input
-              id="form-not-good"
-              name="form-satisfaction"
-              type="radio"
-              value="満足度10%"
-            />
-          </li>
-        </list-tags>
         <button type="submit">送信</button>
       </form-container>
     </layout-inner>
@@ -57,8 +27,7 @@ export default {
     LayoutContainer,
     LayoutInner,
     BaseLink,
-    FormContainer,
-    ListTags
+    FormContainer
   }
 }
 </script>
